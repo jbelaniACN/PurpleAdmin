@@ -119,37 +119,11 @@
       </div>
     </div>
   </div>
-  <div class="col-lg-5 grid-margin stretch-card">
+  <div class="col-md-5 stretch-card">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Traffic Sources</h4>
-        <canvas
-          baseChart
-          [chartType]="'doughnut'"
-          [datasets]="trafficChartData"
-          [labels]="trafficChartLabels"
-          [options]="trafficChartOptions"
-          [colors]="trafficChartColors"
-        ></canvas>
-        <div
-          id="traffic-chart-legend"
-          class="rounded-legend legend-vertical legend-bottom-left pt-4"
-        >
-          <ul>
-            <li>
-              <span class="legend-dots"></span>Search Engines
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Direct Click
-              <span class="float-right">30%</span>
-            </li>
-            <li>
-              <span class="legend-dots"></span>Bookmarks Click
-              <span class="float-right">40%</span>
-            </li>
-          </ul>
-        </div>
+        <h4 class="card-title">Todo</h4>
+        <app-todo></app-todo>
       </div>
     </div>
   </div>
@@ -440,12 +414,38 @@
       </div>
     </div>
   </div>
-  <div class="col-md-5 stretch-card">
+  <div class="col-lg-5 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
-          <h4 class="card-title">Todo</h4>
-          <app-todo></app-todo>
+        <h4 class="card-title">Traffic Sources</h4>
+        <canvas
+          baseChart
+          [chartType]="'doughnut'"
+          [datasets]="trafficChartData"
+          [labels]="trafficChartLabels"
+          [options]="trafficChartOptions"
+          [colors]="trafficChartColors"
+        ></canvas>
+        <div
+          id="traffic-chart-legend"
+          class="rounded-legend legend-vertical legend-bottom-left pt-4"
+        >
+          <ul>
+            <li>
+              <span class="legend-dots"></span>Search Engines
+              <span class="float-right">30%</span>
+            </li>
+            <li>
+              <span class="legend-dots"></span>Direct Click
+              <span class="float-right">30%</span>
+            </li>
+            <li>
+              <span class="legend-dots"></span>Bookmarks Click
+              <span class="float-right">40%</span>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
   </div>
 </div>
