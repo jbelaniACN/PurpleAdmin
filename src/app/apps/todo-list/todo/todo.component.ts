@@ -48,5 +48,7 @@ export class TodoComponent implements OnInit {
       this.todoArray[index]['completed'] = false;
     }
   }
+  searchTodo() {
+  }
 
 }
