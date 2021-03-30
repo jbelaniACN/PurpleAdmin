@@ -31,6 +31,15 @@
   <div class="col-md-4 col-sm-6 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
+        <h4 class="card-title">Center Position</h4>
+        <p class="card-description">Centered Pagination</p>
+        <ngb-pagination [collectionSize]="40" [pageSize]="10" [page]="1" aria-label="Default pagination" class="d-flex justify-content-center pagination-success"></ngb-pagination>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
         <h4 class="card-title">Separated  Pagination</h4>
         <p class="card-description">Add class <code>.pagination-separated</code></p>
         <ngb-pagination [collectionSize]="40" [pageSize]="10" [page]="1" aria-label="Default pagination" class="pagination-separated pagination-danger"></ngb-pagination>
@@ -82,13 +91,5 @@
       </div>
     </div>
   </div>
-  <div class="col-md-4 col-sm-6 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Center Position</h4>
-        <p class="card-description">Centered Pagination</p>
-        <ngb-pagination [collectionSize]="40" [pageSize]="10" [page]="1" aria-label="Default pagination" class="d-flex justify-content-center pagination-success"></ngb-pagination>
-      </div>
-    </div>
-  </div>
+  
 </div>
