@@ -12,6 +12,11 @@
       <i class="remove mdi mdi-close" (click)="removeTodoItem(todo)"></i>
     </li>
   </ul>
+  <form class="add-items d-flex mb-0 mt-2" [formGroup]="form" (ngSubmit)="searchTodo()">
+  <input type="text" class="form-control todo-list-input" formControlName="todoitem" placeholder="Search task">
+  <button class="add btn btn-primary todo-list-add-btn py-2" type="submit" [disabled]="form.invalid">Search</button>
+</form>
+
   <form class="add-items d-flex mb-0 mt-2" [formGroup]="form" (ngSubmit)="addTodo()">
   <input type="text" class="form-control todo-list-input" formControlName="todoitem" placeholder="">
   <button class="add btn btn-primary todo-list-add-btn py-2" type="submit" [disabled]="form.invalid">Add Task</button>
